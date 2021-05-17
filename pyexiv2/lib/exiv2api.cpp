@@ -83,6 +83,7 @@ void set_log_level(int level)
 void init()
 {
     Exiv2::LogMsg::setHandler(logHandler);
+    Exiv2::enableBMFF(true);
 }
 
 #define read_block                                                     \
